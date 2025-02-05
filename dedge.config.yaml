@@ -1,0 +1,26 @@
+config:
+  framework: "hardhat" 
+  framework_version: "^2.19.4" 
+  node_version: "20" 
+  package_manager: "yarn"
+
+environments:
+  ETHERSCAN_API_KEY: "ABC123ABC123ABC123ABC123ABC123ABC1"
+  HERMEZ_URL: "https://zkevm-rpc.com"
+  MAINNET_FORK_10540_URL: "https://rpc.ankr.com/eth_mainnet"
+  MAINNET_FORK_10547_URL: "https://rpc.ankr.com/eth_mainnet"
+  MAINNET_FORK_10548_URL: "https://rpc.ankr.com/eth_mainnet"
+  HARDHAT_FORK_URL: "https://rpc.ankr.com/eth_mainnet"
+  PHALCON_FORK_ID: "10540"
+  PHALCON_RPC_ID: "10547"
+  PHALCON_CHAIN_ID: "1101"
+  PHALCON_FORK_ACCESS_KEY: "10548"
+  PRIVATE_KEY_MAINNET: "0xabc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc1"
+  PRIVATE_KEY_HERMEZ: "0xabc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc1"
+  PRIVATE_KEY: "0xabc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc1"
+  PROXY: "https://proxy.dedge.xyz"
+
+tasks:
+  install-dependencies:
+    - git init
+    - yarn install
